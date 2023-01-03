@@ -1,4 +1,4 @@
-import { ProjectStatus } from "../models/project.js";
+import { ProjectStatus } from "../models/project";
 
 //Project State Management class
 type Listener<T> = (items: T[]) => void;
@@ -11,7 +11,7 @@ class State<T> {
   }
 }
 
-import { Project } from "../models/project.js";
+import { Project } from "../models/project";
 
 export class ProjectState extends State<Project> {
   private projects: Project[] = [];
